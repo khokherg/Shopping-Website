@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>
+Shopping Website
+</title>
+<style>
+#wrapper
+{
+height: auto;
+width:100%;
+}
+#body
+{
+height:auto;
+width:100%;
+background-image: url("images/loginPic.jpg");  
+background-size:100% 100%;
+}
+#header
+{
+height:15%;
+width:100%;
+}
+#header marquee
+{
+color:red;
+font-size:100px;
+}
+.login label input, select
+{
+display:block;
+}
+ 
+#body h2
+{
+color:red;
+}
+.button
+{
+color:white;
+background-color:#b8b894;
+border-radius:10px;
+font-size:15px;
+width:95px;
+}
+.button:hover
+{
+background-color:#ff4d4d;
+color:white;
+}
+
+</style>
+<script src="shopping.js">
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+ <div id="header">
+<marquee direction ="left" scrollamount="25" hspace="2">
+Exclusive offers!! do not wait
+</marquee>
+</div>
+<div id ="body">
+<h2>
+Login
+</h2>
+<form class="login">
+<label>Username:<input id="uname"class ="input" type="text" name="userName" placeholder="Enter username" required ></label>
+<label>Password:<input id="passwd" class="input" type="password" name="password" required></label><br>
+<input class="button" type="button" value="Log in" onclick="login()">
+</form>
+<h2>Sign Up</h2>
+<form class="login" action="dbsignup.php">
+<label>Username:<input  class ="input" type="text" name="userName" required placeholder="Enter username"></label>
+<label>Password:<input class ="input"  type="password" name="password" required placeholder="Enter password"></label>
+<label>Address:<input class ="input" type="text" name="address" required></label>
+<label>Zip Code:<input class ="input" type="text" name="zipcode" placeholder="5 or 9 digits" pattern="^[0-9]{5,9}$"></label>
+<label>City:<input class ="input" type="text" name="city" required></label>
+<label>
+State:
+<select class ="input">
+<option value=""></option>
+<option value="ON">ON</option>
+<option value="Alberta">Alberta</option>
+<option value="Quebec">Quebec</option>
+<option value="British Columbia">British Columbia</option>
+</select>
+</label>
+<label>Email:<input class ="input" type="email" name="emailBox" required placeholder="Enter email"></label><br>
+<label>Contact Number:<input class ="input" type="number" name="phone" pattern="^\d{3}-\d{3}-\d{4}$"></label><br>
+<input class="button" type="submit" value="Sign up">
+</form>
+</div>
+</div>
+</body>
+</html>

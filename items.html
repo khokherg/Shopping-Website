@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>
+</title>
+<style>
+
+#wrapper
+{
+margin:auto%;
+margin:auto%;
+height:165%;
+width:100%;
+background-size:100% 100%;
+border-style: groove;
+background-image: url("images/background.jpg"); 
+}
+#header
+{
+height:4%;
+width:100%;
+text-align:center;
+}
+#sidebar
+{
+height:auto%;
+width:50%;
+float:left;
+}
+#sidebar img
+{
+display:block;
+height:300px;
+width:250px;
+}
+#side2
+{
+height:100%;
+width:50%;
+float:right;
+text-align:left;
+}
+.button
+{
+color:white;
+background-color:#b8b894;
+border-radius:10px;
+font-size:15px;
+align:center;
+position:relative;
+}
+
+
+.button:hover
+{
+background-color:#ff4d4d;
+color:white;
+}
+#checkout
+{
+color:white;
+background-color:#ff4d4d;
+border-radius:10px;
+font-size:15px;
+align:center;
+position:relative;
+width:200px;
+}
+#checkout:hover
+{
+background-color:#b8b894;
+color:white;
+}
+#table{
+margin:40px;
+margin-left:15%;
+}
+#table img
+{
+height:350px;
+width:300px;
+cellspacing:30px;
+cellpadding:10px;
+}
+.button
+{
+
+color:white;
+background-color:#b8b894;
+border-radius:10px;
+font-size:20px;
+
+}
+.button:hover
+{
+background-color:#ff4d4d;
+color:white;
+}
+</style>
+</head>
+<body>
+ <div id="wrapper">
+
+<div id="header">
+<label><input id="add1" class="button"  type="button" value="Try Promotional Code" onclick="PCode()" align="centre"></label>
+<p id="pcode"></p>
+<label>Enter here:<input id="heading" type="text"></label>
+</div>
+<table id="table">
+	<tr>
+	<th><img src="images/item1.jpg"></th>		
+	<th><img src="images/item2.jpg"></th>
+	<th><img src="images/item3.jpg"></th>
+	</tr>
+	<tr>
+	<th>$200<br>
+	<input id="b1" class="button" type="button" value="Add to Cart"></th><br>
+	<th>$300<br>
+	<input id="b2" class="button" type="button" value="Add to Cart" ></th><br>
+	<th>$400<br>
+	<input class="button" type="button" value="Add to Cart"></th><br>
+	</tr>
+	<tr>
+	<th><img src="images/item4.jpg"></th>		
+	<th><img src="images/item5.jpg"></th>
+	<th><img src="images/item6.jpg"></th>
+	</tr>
+	<tr>
+	<th>$200<br>
+		<input class="button" type="button" value="Add to Cart"></th><br>		
+	<th>$300<br>
+		<input class="button" type="button" value="Add to Cart"></th><br>
+	<th>$400<br>
+		<input class="button" type="button" value="Add to Cart"></th><br>
+	</tr>
+</table>
+</div>
+
+<script src="shopping.js">
+
+</script>
+</body>
+</html>

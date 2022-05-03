@@ -1,0 +1,116 @@
+
+<html>
+<head>
+</head>
+<style>
+#item1body
+{
+height:100%;
+width:100%;
+text-align:center;
+}
+#item1body img
+{
+display:inline;
+height:200px;
+width:250px;
+}
+#item1left
+{
+height:100%;
+width:50%;
+float:left;
+}
+.left
+{
+height:100%;
+width:50%;
+float:left;
+display:inline;
+}
+.right
+{
+height:100%;
+width:50%;
+float:right;
+display:inline;
+}
+#item1right
+{
+height:100%;
+width:50%;
+float:right;
+}
+.button
+{
+
+color:white;
+background-color:#b8b894;
+border-radius:10px;
+font-size:20px;
+
+}
+.button:hover
+{
+background-color:#ff4d4d;
+color:white;
+}
+</style>
+</head>
+<body>
+
+<div id="item1body">
+
+<div id="item1left">
+<div class="left">
+<a><img src="images\item1.jpg"  hspace="20"></a><br>
+</div>
+<div class="right">
+<!-- <fieldset class="field"> -->
+<label>Quantity:<input id = "quantity" type="number" name ="quantity" ></label><br><br>
+Delivery:
+<label>Standard<input id="standard" type="radio" name="radioButton" required></label>
+<label>Expedited<input id="exp" type="radio" name="radioButton" required></label><br><br>
+Gift-wrapping:
+<label>Yes<input id ="giftWrap"type="radio" name="giftWrap"  required></label>
+<label>No<input type="radio" name="giftWrap" required></label><br><br>
+Insurance:
+<label>Yes<input id="ins"type="radio" name="insurance" required></label>
+<label>No<input type="radio" name="insurance" required></label><br><br>
+<label>Rewards Membership<input type="radio" name="membership"></label><br><br>
+<input class="button" type="button" value ="checkout" onclick="total()">
+<input class="button" type="button" value ="go to feedback" onclick="goToFeedBack()">
+<!-- </fieldset> -->
+</div>
+</div>
+<div id="item1right">
+<!-- <fieldset class="field"> -->
+<div class="left">
+<p>Item Price:</p>
+<p>Quantity:</p>
+<p>Insurance:</p>
+<p>Discount:</p>
+<p>Tax:</p>
+<p>Sub-total</p>
+<p>Shipping:</p>
+<p>Total</p>
+</div>
+<div class="right">
+<p id="price"></p>
+<p id="qty"></p>
+<p id="insurance"></p>
+<p id="discount"></p>
+<p id="tax"></p>
+<p id="subtotal"></p>
+<p id="shipping"></p>
+<p id="total"></p>
+</div>
+<!-- </fieldset> -->
+</div>
+</div>
+
+<script src="shopping.js">
+
+</script>
+</body>
+</html>
